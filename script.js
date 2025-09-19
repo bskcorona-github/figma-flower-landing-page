@@ -8,8 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
     initProductCarousel();
     initCollectionGallery();
     initSmoothScrolling();
-    initMobileMenu();
+    initHeaderScroll();
     initCartFunctionality();
+    
+    // Initialize mobile menu
+    initMobileMenu();
     
     // Initialize i18n system
     if (window.i18n) {
@@ -181,8 +184,8 @@ function initSmoothScrolling() {
     });
 }
 
-// Mobile menu functionality
-function initMobileMenu() {
+// Header scroll behavior
+function initHeaderScroll() {
     const navbar = document.querySelector('.navbar');
     let lastScrollTop = 0;
     
@@ -410,12 +413,29 @@ function initMobileMenu() {
     const navMenu = document.getElementById('navMenu');
     const navLinks = document.querySelectorAll('.nav-link');
 
-    if (!mobileMenuToggle || !navMenu) return;
+    console.log('Initializing mobile menu...', {
+        mobileMenuToggle: !!mobileMenuToggle,
+        navMenu: !!navMenu,
+        navLinksCount: navLinks.length
+    });
+
+    if (!mobileMenuToggle || !navMenu) {
+        console.error('Mobile menu elements not found');
+        return;
+    }
 
     // Toggle mobile menu
-    mobileMenuToggle.addEventListener('click', () => {
+    mobileMenuToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log('Mobile menu toggle clicked');
+        
         mobileMenuToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
+        
+        console.log('Menu state:', {
+            toggleActive: mobileMenuToggle.classList.contains('active'),
+            menuActive: navMenu.classList.contains('active')
+        });
         
         // Prevent body scroll when menu is open
         document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
@@ -449,8 +469,6 @@ function initMobileMenu() {
     });
 }
 
-// Initialize mobile menu
-initMobileMenu();
 
 // Console welcome message
 console.log(`
