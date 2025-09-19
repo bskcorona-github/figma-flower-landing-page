@@ -6,11 +6,31 @@
 }
 
 body {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Jost', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
     background: #FFF6ED;
     color: #303030;
     overflow-x: hidden;
     position: relative;
+}
+
+/* Japanese language specific styles */
+html[lang="ja"] {
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', 'Jost', sans-serif;
+}
+
+html[lang="ja"] .hero-title {
+    font-size: 2.2em;
+    line-height: 1.4;
+}
+
+html[lang="ja"] .feature-title,
+html[lang="ja"] .service-title {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+html[lang="ja"] .nav-link {
+    font-size: 13px;
 }
 
 /* Typography */
@@ -67,6 +87,28 @@ p {
 .nav-menu {
     display: flex;
     gap: 25px;
+    align-items: center;
+}
+
+/* Language Toggle Button */
+.lang-toggle {
+    background: linear-gradient(135deg, #FFA4A4 0%, #FF7F7F 100%);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(255, 164, 164, 0.3);
+    margin-left: 10px;
+}
+
+.lang-toggle:hover {
+    background: linear-gradient(135deg, #FF7F7F 0%, #FF5A5A 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 164, 164, 0.4);
 }
 
 .nav-link {

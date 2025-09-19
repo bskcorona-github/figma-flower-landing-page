@@ -10,6 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScrolling();
     initMobileMenu();
     initCartFunctionality();
+    
+    // Initialize i18n system
+    if (window.i18n) {
+        window.i18n.init();
+    }
 });
 
 // Navigation functionality
