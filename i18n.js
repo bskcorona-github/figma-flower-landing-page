@@ -12,23 +12,23 @@ class I18n {
                 nav_contact: "Contact",
                 
                 // Hero Section
-                hero_category: "FLOWER SHOP",
-                hero_title: "Beautiful Flowers for Your Special Moments",
-                hero_description: "Discover our stunning collection of fresh flowers, perfect for any occasion. From elegant bouquets to vibrant arrangements, we bring nature's beauty to your doorstep.",
+                hero_category: "ARTIFICIAL FLOWER",
+                hero_title: "Unique Flowers delivered to your doorstep",
+                hero_description: "Lorem ipsum dolor sit amet consectetur. Posuere dolor commodo tellus diam mauris dolor at dui.",
                 hero_button: "Shop Now",
                 
                 // Services Section
                 services_title: "Our Services",
+                service_shopping: "Free Shopping",
+                service_shopping_desc: "Cost on all order $0.00",
                 service_delivery: "Free Delivery",
-                service_delivery_desc: "Lorem ipsum dolor sit amet consectetur. Posuere dolor commodo.",
-                service_quality: "Best Quality",
-                service_quality_desc: "Lorem ipsum dolor sit amet consectetur. Posuere dolor commodo.",
-                service_support: "24/7 Support",
-                service_support_desc: "Lorem ipsum dolor sit amet consectetur. Posuere dolor commodo.",
+                service_delivery_desc: "We offer FREE deliver",
+                service_wrapping: "Gift Wrapping",
+                service_wrapping_desc: "We offer FREE deliver",
                 
                 // Products Section
                 products_category: "PRODUCTS",
-                products_title: "Our Featured Products",
+                products_title_monthly: "This month's top selling Product",
                 product_1_title: "Premium Rose Bouquet",
                 product_2_title: "Spring Garden Mix",
                 product_3_title: "Elegant Lily Arrangement",
@@ -36,8 +36,8 @@ class I18n {
                 add_to_cart: "Add to Cart",
                 
                 // Deals Section
-                deals_category: "SPECIAL DEALS",
-                deals_title: "Limited Time Offers",
+                deals_category: "OFFERS",
+                deals_title: "Deal of the day",
                 deals_timer_text: "Hurry up! Offer ends in:",
                 deals_days: "Days",
                 deals_hours: "Hours", 
@@ -73,20 +73,24 @@ class I18n {
                 testimonial_author: "Sarah Johnson",
                 testimonial_role: "Happy Customer",
                 
+                // Collection Section
+                collection_category: "Collection",
+                collection_title: "Our Best Collections",
+                
+                // Testimonials Section
+                testimonials_category: "TESTIMONIALS",
+                testimonials_title: "What our Clients Say",
+                testimonial_text: "Lorem ipsum dolor sit amet consectetur. Posuere dolor commodo tellus diam mauris dolor at dui.Lorem ipsum dolor sit amet consectetur. Posuere dolor commodo tellus diam mauris dolor at dui.Lorem ipsum dolor sit amet consectetur. Posuere dolor commodo tellus diam mauris dolor at dui.Lorem ipsum dolor sit amet consectetur. Posuere dolor commodo tellus diam mauris dolor at dui.",
+                testimonial_author: "Sarah Johnson",
+                testimonial_role: "Happy Customer",
+                
                 // Footer
-                footer_company: "Flower Shop",
-                footer_description: "Beautiful flowers for every occasion. We bring nature's beauty to your special moments.",
-                footer_quick_links: "Quick Links",
-                footer_services: "Services",
-                footer_contact: "Contact Info",
-                footer_address: "123 Flower Street, Garden City",
-                footer_phone: "+1 (555) 123-4567",
-                footer_email: "info@flowershop.com",
-                footer_follow: "Follow Us",
-                footer_newsletter: "Newsletter",
-                footer_newsletter_desc: "Subscribe to get updates on new arrivals and special offers",
-                footer_subscribe: "Subscribe",
-                footer_copyright: "© 2024 Flower Shop. All rights reserved.",
+                footer_navigation: "Navigation",
+                footer_products: "Products",
+                footer_payment: "Payment Method",
+                footer_app: "Get Online",
+                footer_copyright: "© 2024 all right reserved by bkalpdesign",
+                footer_design: "Design By- Bkalp design",
                 
                 // Language Toggle
                 lang_switch: "日本語"
@@ -100,23 +104,23 @@ class I18n {
                 nav_contact: "お問い合わせ",
                 
                 // Hero Section
-                hero_category: "フラワーショップ",
-                hero_title: "特別な瞬間を彩る美しい花々",
-                hero_description: "あらゆる場面にぴったりな新鮮な花のコレクションをご覧ください。エレガントなブーケから鮮やかなアレンジメントまで、自然の美しさをお届けします。",
+                hero_category: "アーティフィシャルフラワー",
+                hero_title: "あなたの玄関まで届く特別な花々",
+                hero_description: "特別な日を彩る美しい花々。心を込めてお作りした自慢のアレンジメントをお楽しみください。",
                 hero_button: "今すぐ購入",
                 
                 // Services Section
                 services_title: "私たちのサービス",
-                service_delivery: "送料無料",
-                service_delivery_desc: "お客様のもとへ心を込めて新鮮な花をお届けします。",
-                service_quality: "最高品質",
-                service_quality_desc: "厳選された最高品質の花のみを取り扱っています。",
-                service_support: "24時間サポート",
-                service_support_desc: "いつでもお客様のご質問にお答えします。",
+                service_shopping: "送料無料",
+                service_shopping_desc: "全商品送料無料でお届けします",
+                service_delivery: "配送無料",
+                service_delivery_desc: "無料配送サービスをご提供しています",
+                service_wrapping: "ギフト包装",
+                service_wrapping_desc: "無料でギフト包装いたします",
                 
                 // Products Section
                 products_category: "商品",
-                products_title: "おすすめ商品",
+                products_title_monthly: "今月のベストセラー商品",
                 product_1_title: "プレミアムローズブーケ",
                 product_2_title: "スプリングガーデンミックス",
                 product_3_title: "エレガントリリーアレンジメント",
@@ -124,8 +128,8 @@ class I18n {
                 add_to_cart: "カートに追加",
                 
                 // Deals Section
-                deals_category: "特別セール",
-                deals_title: "期間限定オファー",
+                deals_category: "特別オファー",
+                deals_title: "本日限定セール",
                 deals_timer_text: "お急ぎください！セール終了まで：",
                 deals_days: "日",
                 deals_hours: "時間",
@@ -161,20 +165,24 @@ class I18n {
                 testimonial_author: "田中 花子",
                 testimonial_role: "満足のお客様",
                 
+                // Collection Section
+                collection_category: "コレクション",
+                collection_title: "ベストコレクション",
+                
+                // Testimonials Section
+                testimonials_category: "お客様の声",
+                testimonials_title: "お客様からのメッセージ",
+                testimonial_text: "とても美しい花をありがとうございました。特別な日を素晴らしいものにしてくれました。品質も素晴らしく、また利用させていただきます。心からおすすめできるフラワーショップです。",
+                testimonial_author: "田中 花子",
+                testimonial_role: "満足のお客様",
+                
                 // Footer
-                footer_company: "フラワーショップ",
-                footer_description: "あらゆる場面を彩る美しい花々。特別な瞬間に自然の美しさをお届けします。",
-                footer_quick_links: "クイックリンク",
-                footer_services: "サービス",
-                footer_contact: "お問い合わせ",
-                footer_address: "〒123-4567 東京都花区花町1-2-3",
-                footer_phone: "03-1234-5678",
-                footer_email: "info@flowershop.jp",
-                footer_follow: "フォローする",
-                footer_newsletter: "ニュースレター",
-                footer_newsletter_desc: "新商品や特別オファーの情報をお届けします",
-                footer_subscribe: "購読する",
-                footer_copyright: "© 2024 フラワーショップ. All rights reserved.",
+                footer_navigation: "ナビゲーション",
+                footer_products: "商品",
+                footer_payment: "お支払い方法",
+                footer_app: "オンラインで購入",
+                footer_copyright: "© 2024 all right reserved by bkalpdesign",
+                footer_design: "Design By- Bkalp design",
                 
                 // Language Toggle
                 lang_switch: "English"
