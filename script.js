@@ -9,10 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initCollectionGallery();
     initSmoothScrolling();
     initHeaderScroll();
-    initCartFunctionality();
-    
-    // Initialize mobile menu
     initMobileMenu();
+    initCartFunctionality();
     
     // Initialize i18n system
     if (window.i18n) {
@@ -413,6 +411,8 @@ function initMobileMenu() {
     const navMenu = document.getElementById('navMenu');
     const navLinks = document.querySelectorAll('.nav-link');
 
+    console.log('Mobile menu elements:', { mobileMenuToggle, navMenu });
+
     if (!mobileMenuToggle || !navMenu) {
         console.warn('Mobile menu elements not found');
         return;
@@ -423,8 +423,15 @@ function initMobileMenu() {
         e.preventDefault();
         e.stopPropagation();
         
+        console.log('Mobile menu toggle clicked');
+        
         mobileMenuToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
+        
+        console.log('Menu classes:', {
+            toggleActive: mobileMenuToggle.classList.contains('active'),
+            menuActive: navMenu.classList.contains('active')
+        });
         
         // Prevent body scroll when menu is open
         document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
@@ -457,7 +464,6 @@ function initMobileMenu() {
         }
     });
 }
-
 
 // Console welcome message
 console.log(`

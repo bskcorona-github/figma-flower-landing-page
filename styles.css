@@ -118,14 +118,8 @@ p {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 12px;
+    padding: 8px;
     gap: 4px;
-    position: relative;
-    z-index: 1001;
-    min-width: 44px; /* Touch target size */
-    min-height: 44px;
-    justify-content: center;
-    align-items: center;
 }
 
 .hamburger-line {
@@ -1395,8 +1389,8 @@ p {
     }
     
     .mobile-menu-toggle {
-        display: flex;
-        order: 3; /* Ensure it appears after nav-menu */
+        display: flex !important;
+        order: 3;
         z-index: 1001;
     }
     
@@ -1416,12 +1410,13 @@ p {
         visibility: hidden;
         transition: all 0.3s ease;
         z-index: 1000;
+        border-radius: 0 0 10px 10px;
     }
     
     .nav-menu.active {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
     
     .nav-link {
