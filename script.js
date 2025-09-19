@@ -404,6 +404,54 @@ function initTooltips() {
 // Initialize tooltips
 initTooltips();
 
+// Mobile menu functionality
+function initMobileMenu() {
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const navMenu = document.getElementById('navMenu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    if (!mobileMenuToggle || !navMenu) return;
+
+    // Toggle mobile menu
+    mobileMenuToggle.addEventListener('click', () => {
+        mobileMenuToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        
+        // Prevent body scroll when menu is open
+        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    });
+
+    // Close menu when nav link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenuToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+            mobileMenuToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Close menu on window resize if larger than tablet
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            mobileMenuToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+}
+
+// Initialize mobile menu
+initMobileMenu();
+
 // Console welcome message
 console.log(`
 🌸 Modern Flower Landing Page 🌸
