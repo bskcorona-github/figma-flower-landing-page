@@ -413,29 +413,18 @@ function initMobileMenu() {
     const navMenu = document.getElementById('navMenu');
     const navLinks = document.querySelectorAll('.nav-link');
 
-    console.log('Initializing mobile menu...', {
-        mobileMenuToggle: !!mobileMenuToggle,
-        navMenu: !!navMenu,
-        navLinksCount: navLinks.length
-    });
-
     if (!mobileMenuToggle || !navMenu) {
-        console.error('Mobile menu elements not found');
+        console.warn('Mobile menu elements not found');
         return;
     }
 
     // Toggle mobile menu
     mobileMenuToggle.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log('Mobile menu toggle clicked');
+        e.stopPropagation();
         
         mobileMenuToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
-        
-        console.log('Menu state:', {
-            toggleActive: mobileMenuToggle.classList.contains('active'),
-            menuActive: navMenu.classList.contains('active')
-        });
         
         // Prevent body scroll when menu is open
         document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';

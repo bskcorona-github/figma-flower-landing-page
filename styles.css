@@ -118,8 +118,14 @@ p {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 8px;
+    padding: 12px;
     gap: 4px;
+    position: relative;
+    z-index: 1001;
+    min-width: 44px; /* Touch target size */
+    min-height: 44px;
+    justify-content: center;
+    align-items: center;
 }
 
 .hamburger-line {
@@ -1390,6 +1396,8 @@ p {
     
     .mobile-menu-toggle {
         display: flex;
+        order: 3; /* Ensure it appears after nav-menu */
+        z-index: 1001;
     }
     
     .nav-menu {
